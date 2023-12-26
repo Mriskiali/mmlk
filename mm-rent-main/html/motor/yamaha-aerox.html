@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MM Rent</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="../../image/logo-removebg-preview.png">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../style/style.css" />
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a href="../index.html"><img class="img-fluid" width="100" height="100"
+                    src="../../image/logo-removebg-preview.png" alt="" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Sewa
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../index.html#bagianmobil">Sewa Mobil</a></li>
+                            <li><a class="dropdown-item" href="../index.html#bagianmotor">Sewa Motor</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../snk.html">Syarat dan Ketentuan</a>
+                    </li>
+                </ul>
+                <div class="navbar-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="layanankami.html" class="btn btn-danger">Layanan Kami </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page 2 Sewa Motor... -->
+
+    <main>
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="logo" class="bd-placeholder-img card-img-top" xmlns="http://www.w3.org/2000/svg"
+                            aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" role="img"
+                            focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#000000" />
+                        </img>
+                        <h2 class="mt-3">
+                            Yamaha Aerox
+                        </h2>
+                        <!--spesifikasi-->
+                        <div class="card-body">
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="card text-center">
+                                        <ul class="list-group list-group-flush text-left">
+                                            <li class="list-group-item">Spesifikasi</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card-body text-dark rounded-0">
+                                    <p class="mt-3 text-dark display-7">Tahun</p>
+                                    <p class="mt-3 text-dark display-7">CC</p>
+                                    <p class="mt-3 text-dark display-7">Transmisi</p>
+                                    <p class="mt-3 text-dark display-7">Kapasitas Bensin</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card-body text-dark rounded-0">
+                                    <p class="mt-3 text-dark display-7">2023</p>
+                                    <p class="mt-3 text-dark display-7">150</p>
+                                    <p class="mt-3 text-dark display-7">matic</p>
+                                    <p class="mt-3 text-dark display-7">5 Liter</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Daftar Harga -->
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card text-center">
+                                    <ul class="list-group list-group-flush text-left">
+                                        <li class="list-group-item">Daftar Harga</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card-body text-dark rounded-0">
+                                    <p class="mt-3 text-dark display-7">Harga <i class="text-danger">mulai dari</i></p>
+                                    <p class="mt-3 text-dark display-7">Harga Harian (Automatic)</p>
+                                    <p class="mt-3 text-dark display-7">Harga Bulanan (Automatic)</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card-body text-dark rounded-0">
+                                    <p class="mt-3 text-dark display-7">IDR 800,000</p>
+                                    <p class="mt-3 text-dark display-7">IDR 8,000,000</p>
+                                    <p class="mt-3 text-dark display-7">IDR 9,000,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                    <!--form pengisian formulir-->
+                    <div class="col-4 card-body bg-secondary">
+                        <h3 class="text-center mt-3 text-white">Sewa Motor Sekarang</h3>
+                        <form action="" method="POST" class="form-product mt-5">
+                            <!--alamat penjemputan-->
+                            <div class="input-field">
+                                <label for="alamat_penjemputan" class="font-weigt-bold px-3 text-white mb-1">Alamat
+                                    Penjemputan</label>
+                                <div class="input-group mb-3 px-3">
+                                    <div class="input-group-prepand green">
+                                    </div>
+                                    <input class="form-control" name="alamat_penjemputan" placeholder="" type="text"
+                                        required>
+                                    <div class="valid-feedback"></div>
+                                </div>
+                            </div>
+                            <!--tanggal penjemputan-->
+                            <div class="input-field">
+                                <label for="tanggal_penjemputan"
+                                    class="font-weigt-bold px-3 text-white mb-1">Tanggal_Penjemputan</label>
+                                <div class="input-group mb-3 px-3">
+                                    <div class="input-group-prepand green">
+                                    </div>
+                                    <input class="form-control" name="tanggal_penjemputan" placeholder="" type="text"
+                                        required>
+                                    <div class="valid-feedback"></div>
+                                </div>
+                            </div>
+                            <!--tanggal pengantaran-->
+                            <div class="input-field">
+                                <label for="tanggal_pengantaran"
+                                    class="font-weigt-bold px-3 text-white mb-1">Tanggal_Pengantaran</label>
+                                <div class="input-group mb-3 px-3">
+                                    <div class="input-group-prepand green">
+                                    </div>
+                                    <input class="form-control" name="tanggal_pengantaran" placeholder="" type="text"
+                                        required>
+                                    <div class="valid-feedback"></div>
+                                </div>
+                            </div>
+                            <!--Layanan Supir-->
+                            <label for="radio-label" class="text-white mx-3 mt-3 mb-1">Layanan Supir</label>
+                            <div class="input-field mx-3 text-white">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Ya</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                                </div>
+                            </div>
+                            <!--Transmisi-->
+                            <label for="radio-label" class="text-white mx-3 mt-3 mb-1">Transmisi</label>
+                            <div class="form-check mx-3 text-white">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                    value="option2">
+                                <label class="form-check-label mb-5" for="exampleRadios2">
+                                    Matic
+                                </label>
+                            </div>
+                            <div class="text-center mt-5">
+                                <button type="submit"
+                                    class="btn text-white bg-success btn-lg rounded-50 mt-5">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-3 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>
+                        <img class="img-fluid" width="65" height="65" src="../../image/logo-removebg-preview.png" />
+                        PT. MAJU MUNDUR
+                    </h4>
+                    <p>
+
+                        MM Rent adalah penyedia layanan sewa kendaraan bermotor yang berpengalaman
+                        di indonesia
+                    </p>
+                    <div class="mb20">
+                        <p class="caption">
+                            <i class="fa fa-map-marker-alt"> </i>
+                            <img class="img-fluid" width="30" height="30" src="../../image/lokasi.png" />
+                            Jln. Maju mundur Jakarta No. 15
+                        </p>
+                        <p>
+                            <img class="img-fluid" width="30" height="30" src="../../image/hp.png" />
+                            (+62) 812-9707-4273
+                        </p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="col-md-5 text-end">
+                    <p>
+                        <b>Alamat E-mail</b>
+                    </p>
+                    <img class="img-fluid" width="50" height="50" src="../../image/email.png" />
+                    majumundur@gmail.com
+                    <p></p>
+                    <p>
+                        <b>JAM KERJA</b>
+                    <p>Senin-Jumat (08.00-18.00)</p>
+                    <p>Sabtu (08.00-15.00)</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7 text-end">
+            <p>© 2023 All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

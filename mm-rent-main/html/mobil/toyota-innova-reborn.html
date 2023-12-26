@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MM Rent</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="../../image/logo-removebg-preview.png">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../style/style.css" />
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a href="../index.html"><img class="img-fluid" width="100" height="100"
+                    src="../../image/logo-removebg-preview.png" alt="" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Sewa
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../index.html#bagianmobil">Sewa Mobil</a></li>
+                            <li><a class="dropdown-item" href="../index.html#bagianmotor">Sewa Motor</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../snk.html">Syarat dan Ketentuan</a>
+                    </li>
+                </ul>
+                <div class="navbar-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="layanankami.html" class="btn btn-danger">Layanan Kami </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page 2 Sewa Mobil... -->
+
+    <main>
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="logo" class="bd-placeholder-img card-img-top" xmlns="http://www.w3.org/2000/svg"
+                            aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" role="img"
+                            focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#000000" />
+                        </img>
+                        <h2 class="mt-3">
+                            Toyota Innova Reborn
+                        </h2>
+                        <!--spesifikasi-->
+                        <div class="card-body">
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="card text-center">
+                                        <ul class="list-group list-group-flush text-left">
+                                            <li class="list-group-item">Spesifikasi</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card-body text-dark rounded-0">
+                                    <p class="mt-3 text-dark display-7">Tahun</p>
+                                    <p class="mt-3 text-dark display-7">CC</p>
+                                    <p class="mt-3 text-dark display-7">Transmisi</p>
+                                    <p class="mt-3 text-dark display-7">Kapasitas Bensin</p>
+                                    <p class="mt-3 text-dark display-7">Kapasitas kursi</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card-body text-dark rounded-0">
+                                    <p class="mt-3 text-dark display-7">2023</p>
+                                    <p class="mt-3 text-dark display-7">1500</p>
+                                    <p class="mt-3 text-dark display-7">matic</p>
+                                    <p class="mt-3 text-dark display-7">45 Liter</p>
+                                    <p class="mt-3 text-dark display-7">6 Kursi</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Daftar Harga -->
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card text-center">
+                                    <ul class="list-group list-group-flush text-left">
+                                        <li class="list-group-item">Daftar Harga</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card-body text-dark rounded-0">
+                                    <p class="mt-3 text-dark display-7">Harga <i class="text-danger">mulai dari</i></p>
+                                    <p class="mt-3 text-dark display-7">Harga Harian (Automatic)</p>
+                                    <p class="mt-3 text-dark display-7">Harga Bulanan (Automatic)</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card-body text-dark rounded-0">
+                                    <p class="mt-3 text-dark display-7">IDR 800,000</p>
+                                    <p class="mt-3 text-dark display-7">IDR 8,000,000</p>
+                                    <p class="mt-3 text-dark display-7">IDR 9,000,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                    <!--form pengisian formulir-->
+                    <div class="col-4 card-body bg-secondary">
+                        <h3 class="text-center mt-3 text-white">Sewa Mobil Sekarang</h3>
+                        <form action="" method="POST" class="form-product mt-5">
+                            <!--alamat penjemputan-->
+                            <div class="input-field">
+                                <label for="alamat_penjemputan" class="font-weigt-bold px-3 text-white mb-1">Alamat
+                                    Penjemputan</label>
+                                <div class="input-group mb-3 px-3">
+                                    <div class="input-group-prepand green">
+                                    </div>
+                                    <input class="form-control" name="alamat_penjemputan" placeholder="" type="text"
+                                        required>
+                                    <div class="valid-feedback"></div>
+                                </div>
+                            </div>
+                            <!--tanggal penjemputan-->
+                            <div class="input-field">
+                                <label for="tanggal_penjemputan"
+                                    class="font-weigt-bold px-3 text-white mb-1">Tanggal_Penjemputan</label>
+                                <div class="input-group mb-3 px-3">
+                                    <div class="input-group-prepand green">
+                                    </div>
+                                    <input class="form-control" name="tanggal_penjemputan" placeholder="" type="text"
+                                        required>
+                                    <div class="valid-feedback"></div>
+                                </div>
+                            </div>
+                            <!--tanggal pengantaran-->
+                            <div class="input-field">
+                                <label for="tanggal_pengantaran"
+                                    class="font-weigt-bold px-3 text-white mb-1">Tanggal_Pengantaran</label>
+                                <div class="input-group mb-3 px-3">
+                                    <div class="input-group-prepand green">
+                                    </div>
+                                    <input class="form-control" name="tanggal_pengantaran" placeholder="" type="text"
+                                        required>
+                                    <div class="valid-feedback"></div>
+                                </div>
+                            </div>
+                            <!--Layanan Supir-->
+                            <label for="radio-label" class="text-white mx-3 mt-3 mb-1">Layanan Supir</label>
+                            <div class="input-field mx-3 text-white">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Ya</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                                </div>
+                            </div>
+                            <!--Transmisi-->
+                            <label for="radio-label" class="text-white mx-3 mt-3 mb-1">Transmisi</label>
+                            <div class="form-check mx-3 text-white">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                    value="option2">
+                                <label class="form-check-label mb-5" for="exampleRadios2">
+                                    Matic
+                                </label>
+                            </div>
+                            <div class="text-center mt-5">
+                                <button type="submit"
+                                    class="btn text-white bg-success btn-lg rounded-50 mt-5">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-3 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>
+                        <img class="img-fluid" width="65" height="65" src="../../image/logo-removebg-preview.png" />
+                        PT. MAJU MUNDUR
+                    </h4>
+                    <p>
+
+                        MM Rent adalah penyedia layanan sewa kendaraan bermotor yang berpengalaman
+                        di indonesia
+                    </p>
+                    <div class="mb20">
+                        <p class="caption">
+                            <i class="fa fa-map-marker-alt"> </i>
+                            <img class="img-fluid" width="30" height="30" src="../../image/lokasi.png" />
+                            Jln. Maju mundur Jakarta No. 15
+                        </p>
+                        <p>
+                            <img class="img-fluid" width="30" height="30" src="../../image/hp.png" />
+                            (+62) 812-9707-4273
+                        </p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="col-md-5 text-end">
+                    <p>
+                        <b>Alamat E-mail</b>
+                    </p>
+                    <img class="img-fluid" width="50" height="50" src="../../image/email.png" />
+                    majumundur@gmail.com
+                    <p></p>
+                    <p>
+                        <b>JAM KERJA</b>
+                    <p>Senin-Jumat (08.00-18.00)</p>
+                    <p>Sabtu (08.00-15.00)</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7 text-end">
+            <p>© 2023 All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MM Rent</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="../../image/logo-removebg-preview.png">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../style/style.css" />
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a href="../index.html"><img class="img-fluid" width="100" height="100"
+                    src="../../image/logo-removebg-preview.png" alt="" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Sewa
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../index.html#bagianmobil">Sewa Mobil</a></li>
+                            <li><a class="dropdown-item" href="../index.html#bagianmotor">Sewa Motor</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../snk.html">Syarat dan Ketentuan</a>
+                    </li>
+                </ul>
+                <div class="navbar-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="layanankami.html" class="btn btn-danger">Layanan Kami </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page 2 Sewa Motor... -->
+
+    <main>
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="logo" class="bd-placeholder-img card-img-top" xmlns="http://www.w3.org/2000/svg"
+                            aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" role="img"
+                            focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#000000" />
+                        </img>
+                        <h2 class="mt-3">
+                            Yamaha R-15
+                        </h2>
+                        <!--spesifikasi-->
+                        <div class="card-body">
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="card text-center">
+                                        <ul class="list-group list-group-flush text-left">
+                                            <li class="list-group-item">Spesifikasi</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card-body text-dark rounded-0">
+                                    <p class="mt-3 text-dark display-7">Tahun</p>
+                                    <p class="mt-3 text-dark display-7">CC</p>
+                                    <p class="mt-3 text-dark display-7">Transmisi</p>
+                                    <p class="mt-3 text-dark display-7">Kapasitas Bensin</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card-body text-dark rounded-0">
+                                    <p class="mt-3 text-dark display-7">2023</p>
+                                    <p class="mt-3 text-dark display-7">150</p>
+                                    <p class="mt-3 text-dark display-7">matic</p>
+                                    <p class="mt-3 text-dark display-7">5 Liter</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Daftar Harga -->
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card text-center">
+                                    <ul class="list-group list-group-flush text-left">
+                                        <li class="list-group-item">Daftar Harga</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card-body text-dark rounded-0">
+                                    <p class="mt-3 text-dark display-7">Harga <i class="text-danger">mulai dari</i></p>
+                                    <p class="mt-3 text-dark display-7">Harga Harian (Automatic)</p>
+                                    <p class="mt-3 text-dark display-7">Harga Bulanan (Automatic)</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card-body text-dark rounded-0">
+                                    <p class="mt-3 text-dark display-7">IDR 800,000</p>
+                                    <p class="mt-3 text-dark display-7">IDR 8,000,000</p>
+                                    <p class="mt-3 text-dark display-7">IDR 9,000,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                    <!--form pengisian formulir-->
+                    <div class="col-4 card-body bg-secondary">
+                        <h3 class="text-center mt-3 text-white">Sewa Motor Sekarang</h3>
+                        <form action="" method="POST" class="form-product mt-5">
+                            <!--alamat penjemputan-->
+                            <div class="input-field">
+                                <label for="alamat_penjemputan" class="font-weigt-bold px-3 text-white mb-1">Alamat
+                                    Penjemputan</label>
+                                <div class="input-group mb-3 px-3">
+                                    <div class="input-group-prepand green">
+                                    </div>
+                                    <input class="form-control" name="alamat_penjemputan" placeholder="" type="text"
+                                        required>
+                                    <div class="valid-feedback"></div>
+                                </div>
+                            </div>
+                            <!--tanggal penjemputan-->
+                            <div class="input-field">
+                                <label for="tanggal_penjemputan"
+                                    class="font-weigt-bold px-3 text-white mb-1">Tanggal_Penjemputan</label>
+                                <div class="input-group mb-3 px-3">
+                                    <div class="input-group-prepand green">
+                                    </div>
+                                    <input class="form-control" name="tanggal_penjemputan" placeholder="" type="text"
+                                        required>
+                                    <div class="valid-feedback"></div>
+                                </div>
+                            </div>
+                            <!--tanggal pengantaran-->
+                            <div class="input-field">
+                                <label for="tanggal_pengantaran"
+                                    class="font-weigt-bold px-3 text-white mb-1">Tanggal_Pengantaran</label>
+                                <div class="input-group mb-3 px-3">
+                                    <div class="input-group-prepand green">
+                                    </div>
+                                    <input class="form-control" name="tanggal_pengantaran" placeholder="" type="text"
+                                        required>
+                                    <div class="valid-feedback"></div>
+                                </div>
+                            </div>
+                            <!--Layanan Supir-->
+                            <label for="radio-label" class="text-white mx-3 mt-3 mb-1">Layanan Supir</label>
+                            <div class="input-field mx-3 text-white">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Ya</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                                </div>
+                            </div>
+                            <!--Transmisi-->
+                            <label for="radio-label" class="text-white mx-3 mt-3 mb-1">Transmisi</label>
+                            <div class="form-check mx-3 text-white">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                    value="option2">
+                                <label class="form-check-label mb-5" for="exampleRadios2">
+                                    Matic
+                                </label>
+                            </div>
+                            <div class="text-center mt-5">
+                                <button type="submit"
+                                    class="btn text-white bg-success btn-lg rounded-50 mt-5">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-3 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>
+                        <img class="img-fluid" width="65" height="65" src="../../image/logo-removebg-preview.png" />
+                        PT. MAJU MUNDUR
+                    </h4>
+                    <p>
+
+                        MM Rent adalah penyedia layanan sewa kendaraan bermotor yang berpengalaman
+                        di indonesia
+                    </p>
+                    <div class="mb20">
+                        <p class="caption">
+                            <i class="fa fa-map-marker-alt"> </i>
+                            <img class="img-fluid" width="30" height="30" src="../../image/lokasi.png" />
+                            Jln. Maju mundur Jakarta No. 15
+                        </p>
+                        <p>
+                            <img class="img-fluid" width="30" height="30" src="../../image/hp.png" />
+                            (+62) 812-9707-4273
+                        </p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="col-md-5 text-end">
+                    <p>
+                        <b>Alamat E-mail</b>
+                    </p>
+                    <img class="img-fluid" width="50" height="50" src="../../image/email.png" />
+                    majumundur@gmail.com
+                    <p></p>
+                    <p>
+                        <b>JAM KERJA</b>
+                    <p>Senin-Jumat (08.00-18.00)</p>
+                    <p>Sabtu (08.00-15.00)</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7 text-end">
+            <p>© 2023 All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

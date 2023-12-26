@@ -1,0 +1,24 @@
+.container-fluid {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.lokasi {
+  width: 30px;
+}
+
+.hp {
+  width: 30px;
+}
+
+.email {
+  width: 50px;
+}
+
+.logo1 {
+  width: 65px;
+}

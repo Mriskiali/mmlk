@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>MM Rent</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="icon" href="../image/logo-removebg-preview.png">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../style/style.css" />
+
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary navbar border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a href="index.html"><img class="logo" src="../image/logo-removebg-preview.png" alt="" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sewa
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#bagianmobil">Sewa Mobil</a></li>
+              <li><a class="dropdown-item" href="#bagianmotor">Sewa Motor</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="snk.html">Syarat dan Ketentuan</a>
+          </li>
+        </ul>
+        <div class="navbar-nav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="layanankami.html" class="btn btn-danger">Layanan Kami </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page 2 Sewa Mobil... -->
+  <main>
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <a href="mobil/toyota-innova-zenix.html"><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcppQDtes6n-uhzUOyEueaTBszG52MHQjXww&usqp=CAU"
+                  alt="logo" class="bd-placeholder-img card-img-top" xmlns="http://www.w3.org/2000/svg"
+                  aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" role="img"
+                  focusable="false"></a>
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#000000" />
+              <text class="px-3" x="50%" y="50%" fill="#eceeef" dy=".3em">
+                Toyota Innova Zenix
+              </text>
+              </img>
+
+              <div class="card-body">
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="mobil/toyota-innova-zenix.html"><button type="button"
+                        class="btn btn-sm btn-outline-secondary">View</button></a>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <a href="mobil/toyota-innova-reborn.html"><img
+                  src="data:image/jpeg;base64,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"
+                  class="bd-placeholder-img card-img-top" xmlns="http://www.w3.org/2000/svg"
+                  aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" role="img"
+                  focusable="false"></a>
+              <title>Placeholder</title>
+              <rect class="col" width="100%" height="100%" fill="#000000" />
+              <text class="px-3" cx="50%" y="50%" fill="#eceeef" dy=".3em">
+                Toyota Innova Reborn
+              </text>
+              </img>
+
+              <div class="card-body">
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="mobil/toyota-innova-reborn.html"><button type="button"
+                        class="btn btn-sm btn-outline-secondary">
+                        View
+                      </button></a>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <a href="mobil/toyota-avanza.html"><img
+                  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBQUFBgVFBUZGBgZGxobGxsbGhwbGBgYGBoZGhgaGxgbIS0kGx0qIRsaJTclKi4xNDQ0GiM6Pzo0Pi0zNDEBCwsLEA8PERERETEcGBwxMTExMTExMTExMTExMTE+NDM+MzMxMz4zMTE/MzExMTExMTExMTExMTExMTExMTExMf/AABEIAKkBKwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAGAAMEBQcBAgj/xABOEAACAQIDAwgFCAYJAwIHAAABAgMAEQQSIQUxQQYTIlFhcYGRBzJSobEUQmKCksHR0iNDcpTC8BUWM1OTorLT4VRkgyRzFzRjo8Pi4//EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABgRAQEBAQEAAAAAAAAAAAAAAAARASEC/9oADAMBAAIRAxEAPwDZqVKlQKlSpUCpU3JIFBJIAG8k2A8aF9tcrUhBy6fSYG5/ZTQ+LW8aAnmlVBdiFA4k2FUW0OVUUe7XqJNge7i31QazHa/LB5CSCewk3bwO5fqgHtoTxO3bliXAJ7bk9+8mrErU8by2dr5d3YQg+03S/wAtVGH5Zs8gjdB0tAyyFrnfYnKtjWcDaQfQMx8Db/ivSSlTcbwQw/aXUVRo/KHacuFMWIjkkeFzldCxIBIJBF/VbRvFR11A/rpm+ZJ9pfxqYsYxeClhXUsgli77B1HmAPE1m8GIJA7PhQHX9bL/ADH+0KX9aj7D/bFBgmrvPUBkOVJ9h/tj8KcTlR9F/tCgnnq6J6A7TlWBwk81/Gn05YL1uPs/jQAuIpc7QaTHyz6nceA/NU+DlofbPipNZYsnUalQ4ojjpSDWYOWQ4lT3girGHlVGd9vOsjixx66mRbQ7aQrVV5RrxQkdaMr/AOU2Y+ANWGA2rDPfm5ASN67nXvU6jyrKYNod1TFlVyCwsw3MpKup61caikK1mlQJs7lRLDYYi8sX94o/SKOuRB6w+kviONGeExccqCSNw6MLhlNwR31lUilSpUCpUqVAqVKlQKlSpUCpUqVAqVKlQKlSpUCrw7gAk7hXuhLlvtvmIwF1Y+qvtOfVB+ioux7l66Cl5a8rxEebQZn3hL6DqZ/uHwrIcVtGedi+UnMT0nOngBwqw2sXIJJLO7WzHeXY2v4DXsApxMHYBV3CwHhpWkUvyN2/tJCewaCvIw6c41lFlsALcTqfHdRdheTUj6s6IPpMS32UBPnapmF5EIAc+LuSSTlhY6ntZxQBTmvINHU3ISM+pi9fpQkDzDm3lQdjsC8LukgAKaGxuDxBU8QdD40BbyLxto42vrE7Rt+w3TXws1vq0Lcp8F8nxksY0Vmzp+y/SHkcw8KvuQuFZkxRPq3jA/aAcn3EedM8u4s8cM9jdLxOe/pIfMMPrCoBfNSzU0p0vSzVQ9mpZqbBpXoHM9dElNSC1eQ5FBKSQ08shqEkx41ID0ElZ6lwT1UF9TTkEtj7qUEMWIqfBiqHUlqTHPVBXhsbbjU/AYyTDsZMMQLm7xH+zk6yB8x/pDx66FIcTVhh8VQazsPbsWLQlbqy6OjaOh7RxHbuq3rHUlbMskb5JV9Vx1eyw+cvZR5yZ5TLif0cgEc6i5S/Rce0hO8dm8VncKJqVKlUUqVKlQKlSpUCpUqVAqVKlQKlSpUDcjhQSdwFz4Vjm2sWcVM8pPR1WMdSX1bvbf3BRwo95ezTjCssCMxYjOVtdYwbsLXubjTThes2XHRlfXUd5se4g7q15TVU0GfEKOCIXP7TnInuDVawIUIYaEdm6ouBmTnJXNzmZVXKrNdEQWPRHtF6n8/fdFOe6Fz91US49tZT66X6mCj3aGpQ5XqnrRI37JI/GgfF7FxLOTHFilQm4BjkICnqFvdUKXk9jj+qmNt36GQfwVkaSvLTBH14pE7srD4ignlRtSLFTGSFXCXjjGYAFioLMbAm2hA8KGZ4pYyUkDKwOqsLMDvNwRcb6sMGp6CKjuEzv0ELMQwsCVXqJNz3UBHyExoSZ4WOkq5h1Z0vbzUn7Iq92jsZp45o19UrcE7g69JTYa7wKz7DxyrOjGN06W90ZdOOrAVoWwZmkkVHLEHTMD01PA3GpHfegzhtm4iNelE+XfcLmtf9m9xUN+j61x3gj41tk2zZBmvZ8rMCfVca3XXceiV3iq2XCkmw1PssAG8L6N4UGSBx117jIOtaZNydik9fDKT1hcp81tUWXkZGwssRHeGYe5gffQZ9LrY3HnTDMPaXzrRk5Bpxw1x1qTfyYj4mpCcgMIdCoQ9T50P+Yi/hQZhnXr9x/CpaNf8AkD4mtMPozw3sr9tvzVz/AOHGFG8L9pvxoMulkAYgmxFv5uNKcQltV17uutPX0dYTqTzb8afj5A4ZdwT30Gbq3ZTivatNTkVB7EZ8XHwYU+vI/D/3cZ+s/wAc9WjMo5+2psOI7a0BuRWDOpgS/wD7kn56bbkHhDe0RXulceX6Q0oEMPjQN7AeIqXPLHIBeQIykMjhwrow3Mp/kHjpVtL6LcO+55F7pF/ITTbeiaIgBcRItvpg+7mx8aUWHJjlg+fm5HDMu9fmyL7cZ7t68CDw3aYjXAPXWTN6KVKKoxdirXzc3dzcg2LF+zQ20opg2RiYFAixTtYfrGLX89PcKgM6VCB23jYv7SFXXrXQ+a3HuqVg+WGHfR80Z+kLr9ofeKiiWlTUUqsAysGB3EG4PiKdoFSpUqBUqVKg5Vdtna0eFiMkhAA0AuBdrEgAk24VY0P8p8Ak6rG+qglmX2hawU9h1v8A80XJemf6RZ7PmQEgHLnW63F7b+FQo5RzllgUDpEyFFVWPDI9rPc31vw43rmKnQ3WSJHH0kX8Kr8fyfjxCARMUCgWUs7KLX0CFsqr3C9VkQjEPwI8GX7jTGM2jJGuds5FwLIC7EncAqXP4UDy8i8Qu4I3cbfEVzB7FxsD50iN7EdFl3EcCD3cKAx2dtWaYvlRgFK5b3DMpB1IIAGoIsL2trvqYXxHsN/PjQLtzC4tmW5xDqFBUtYspYDOLxqBvFVJeZPnyr9eRfvoJ3Lfkri8RMZY4Gcuq5tVFnXo63PFQtUsHJXEQavHPmUWvGrmzGxIzIDYWse3Sp6bRxA3Tzf4j/jUvB7Xxt8sc0hJN7DpEk94J4VRTJhZWOaUSswP6wOT/nos2IzRxqQLanhbjVpg4NrEXeZUHVJkv5KpNTSuO4yYd+9WHwqCrfFknNzjo1gCUYagXtmRgVbfvIpvEYmTIzdCbKC2Urzbm2tg6kqW6uiO+peJ+Vjfh4X/AGW18mqrba6o1pMIFYdtvuFA/h+VkRRWYSoCARnjdtDuOdAykdt68/1xw/DExj9pspHg1qoQ8yQZpJFhiKs6iMHnGUHczX3ajQa661VRbXZlzFtDovSe5JvYEM1idOHb1VYD6Db4f1JEb9lgfgaljaxIsRp21m8LpK2qxEW1ZkjNuwixb769Rc2XyLHYjTMjvGt72t0GGv4Ug0GbEBxYG3ut4iqLGPIDqxt31XthZVjMgM6xqpcsJo3so45Zbn47xUUbRcD+2kF/7zDhxroL82y77HhwqQT+ff2j5mu/KH9o+ZqrxO0Cqowlw7h2y5iJYlBCsxJLBhwtYcSK8rj3O6TCf47/AO3QW/yl/aPma6MU/tHzNVQxUn95hP3hvyV35RL7WE/eT+Sgt1xUntHzpxcZJ7R86pRipevCfvB/JXsYyTrwv7yf9ugvUx0ntnzqQm0ZPbPnQ4NoSD52E/eT/t04Npv14T96P+1QE6bUk9o0+m1ZPaNC67Sk4fJf3lv9mnBj5v8AtP3pv9qgLE2xJ10zi5I5R00W/tAWbz4+NDg2hL/2n703+zXr+k5OvCfvTf7NBa7GxcmGkyZiUc6djcD2X3GjfCbTDaNWYSbTY7zhP3lt/wDhVLwe1J51ukbuoJDc0RHHobEHEOQzg6aoEOtBqccob1SDY2NjexG8HqNO1nOx9qSLiY8OkcMY+eI2ZsoBUFSSoBbXW5NaNUUqVKlQKgbbnKQ4fESo6B1GXJY5WDZFNidQV8Lijmsl5cf/ADrj9n3qtBabO2zHiXyMmRzuF8ysbHQGwsdDpVyqJHxt42FZ1NhZIrMylTcMDcGxBvw3EdVe9p7UkmtnOnsjRb9duJqo0VMUh9WRT3MD99es7cDWTM1Ox4qRbZXYdzEfA0GrLI/WKcEr8VB8KzGLbWIXdK/i1/jU6LlTih88N3qv3AUB1JDG/rwxnvQfhTaosebmY1ThdQBuGvvvQmnLCYesiHwYfeaZ2nyjaWLm0BTMen2jflBHA8e6gv321hkNnmBbjlDPr3qCPfTiYyOUXjkV7bwDZh3qbEeVAuHwzucqIzHqUE/CuyQyRsMwZHGouCrDtFAZuzcGIpg4l5LxvGstuvQqeBzfcNah7P2mkiWdsrj1juGX2xwvwt1m+6rbDvA1gki6brML/G9+2gF9ptKMOsDwRsqKFziV0YkCzEqyaXF9A2mnUKE4sCEPREh0YDNzTgFha/RcE6X4Vqe0MA79EDMCN9vjVGeSpJ3EedUBOHw6xEdN9Dms0T2LKOjdkB0za3ruylWMnnJYTmAJJLqVYHUdMAWIvu7KOByQJ667/UxjxNQDWK2s00TxLIqq1gcp5xiFdWsFizmxy8bUo1kK5MsjqDdS4SO28esbtxO9aJouSUkZujEH49441PhwEg/tFB6iul+8UoCByakaFY0iRVVi9mkkYucuUXZQuW3YKgnk1KNDhEP/AJJ7e560iPGqhKlbEcDwr3NtgKjPZciC7Ft1+C36z9xNBmh2BJ/0MZ/8k/5q5/QEvDAx/wCLP+ar5/SYuto4/KXz9Wmj6TR7EQ+pIfwoKccnMQd2z4/8Sb81MY3kvigjN8hVQASWV5GKji2Utrbfu4UQD0mOfVWO3XzUh/ir0vpNmHBP8CT89AEJsjmpQJrOgj539GfWTcAG0trv491GGwYAyyBWwhSRlRLBEaIMkjAhWW5luE0bNcK/XQrittB5jIgTKQwyZWRCr+umUsSovqLHQ2tuqRgcfFGsgyyEkqyXAOR1V1z3DAMcrkagbhpQSMXsSOeMGGSEzRi87IpXDsrB2VkuoBYBCCVABv2a+Nh8l8VLCsiYOF1YmzO7BjY2IsGFrVAxe0egIo0yIN49Z5DuJkYWuLaBdwBO8kmr/Dcv8VGgjQAKL2/9Ot9SSf1vWTQOJyMxf/RYQd7Of46kR8i8X/0+EXwkP8dRj6Q8XxH/ANhR/wDkpuX0iYzhp3xJ+egsm5H4kfq8N4RyH4vV6uDxGFSNXiWSI5MvMgq6bsqPGQ5dM2uZdQbbgSaCh6ScbexZR/4k/GtU5O7TTGYW5tmCkHs0O7sP3HqoK3kngzFiOckJAGYZTa93YuzFQScxJBJLX6I6IrRkcMLg3HZQlhtnRoLs4XvYD409JtbDwDMkwNt6i7A9hIFhQFdKm42DAMNxAI7jrTlRSrIvSHiOZxjyn5qI47woC+8CtdrCvSzKecmBPSzov1dGHuAoKjYPKJ588UlsxGYb7G3fxH41MdqDthplkWQsQQdO0bmv4UWOaqOXroNeAa9Dd/PZVDqmnAKaU06tB2uxru7fLWuUzjcRzcTSeytx2ncB5kUFti+XcOB/QwRhyLZ3IPSbibXFvE7uHE22xuVWG2mhikXJJa4HG/WhO49moPXwrEGkJJJNySST1k7zUnBSyRuskYYMpDAgG1++oNBx8TRu6nepy6bjbW/jeosUhvUlsas8aSDQka9vf23veoQ0NAS4DGOFtnYCx3MR1dtDmI2n0zkkc671LkeY0Ne9tSFcKxB3lR4F1uO0WqswMb4orHnEa2zOVyo0h0CopPrN1L7ibCgsY9uSrummH1pBUpOVE43Ytx3yfmqi5U7EaBEljkd4mYpdtHV1ANmt1jcdO6q7DbHnbUuVG+5Y7u4GgN05WYvhimP2D8RTqcrsbf8Atb98cf5aC02eu5Xdutyxy/VA9bv3d9W+CwoQWHv1J7zQE64+bEuocqznS4VVAHEtYbh10McpeUMUrfJ153mY/VaPL+kf57tm3g8LHd41J5QbSXCQrHrzs46dtGSC+oHUz2t59VDcWJwbEBRMh7QH94I+FAxiWAVrKzLoDnZVPWBlUnzzeFMI0BHSjYHqDXHnmFO4uRDcCN3W+8sFuRpfKoNvOvCDDW1ie/EZiffpQe/lMarljRu4vYa79zmnjI17GLT6LsfcSKYeKEC6wue98v417ON1s0bjufN7rD40DiLHe/MHXeWbT/XTGIbLf9FEBw1a+t7Xu1uFOpikO5H8wP4qYmnGuaIW+lIT123HvoOJi1H6tL9Yew+NdkxunRRB3szfhauJiorawi/YzW95rsmLit0YkB+kS3uH40HhdoEXuqHq0t9xvTcm0Lg2VAevLf8AhpDHAH+zjPctvjevX9J//TQfVB+6g7BjGT1o45AdwZSNeHqFSe69FHo723zUvNSepJ0WG6ytpfwJB+1QxhdoSowcFGt81kWzdlgAfKpeMxs8kiTyQhEXo9CMogUnUdZ37z10BxygxSYWZomuToVLXAZW9XpAHtB03g1W4zlCEISUFVIB6CMQO0uxGYAHcBV3tsJiIMLPJZsjc3JfdqRcnxS/cT11Xekhg2GRnUGQSEZgQSIymqki2Yh7W00DW3Gg2zZDXw8Rve8aa8D0RrU6oOxVthoR1Rx/6BU6opVh/pnwxEzNb1ubYduhT4gVuFZ76XNjmTC8+ouYrZ7exmU5vqke80GUvgk5hWVjcB7DhmRowFtwBSQNc6kkjdarLZ8fOhTewIBJ7x8al4WSGWOKTKAgGSVRwkiVVY34Z1jiYeNUewp2EeXNqhKnw3fz2VpBYNixsOg5B7dRUPE7IljFyuZfaXUf8U1BtFhv91XOD23awv5+FQDymnVNEzph5vXUK3tLofwNQsTyekGsZDjq3N5caCpFU/KuS0AHtMB5XP3CrdkKkhgQRvB0I8KpuUlisd+BY+QsPjVA5hogtiwzNwU7h3jiatU2kw+b5HXT3VHwkKMQ0rMsZYL+jAMjm4zBQxAsLi7HTUDUnS65YYTD4OaOOLDh4niSQM7yCRrlg3SVgF9Xdl0qDmzccr3A0I1tuPb3/wDNTHHSrxjuTr4UwzKwZJUVipIMkedVNm3Z0uQM4A4XA4uNqAaBrlA1sH3ug/zX+6oXJfa8MMjiU5cyoUfpWVlbpBsutipPZpYgg1I5RN/6UDrkX4NQg6ktYUBftzakUi8zHJ0CysWsTcqmQZVPSO88OqmGlMlltlQAAJxIGl3I39w076rMBhQNd56/wq7w0NUO4eKrTDKiAySaIgLN221tTcEVVfKPaSxskRTOtw8iXIDD5qkjW19fqjroKifasU0jyYiF2ZzfMH9VdyqFKnQC3HWnYTgWvlaZG6slyey+YjztTp2js5/Xw8kZ+g1wPC4puQYLKWjlkJ4LkIP2m0Hn4UEQqNcqyW/bS58Ob++vYCX9WT7SflrwJR1P4FTb3V1nTrfyH4UHHudEime3rDTTqvZD91e40e/Sw8wHn7iq/GouGcc42UtYjW/XcVY4WMO3SDlF1cxrnZV11tuG7ebDf1VB45k/3MniVH8VRpYnP6jT6Ug8NL1ajCR84sapiGZiRkyBZCSMyZV1J0ubW1GoIqRi9ndB3jw2IVVfJne2VTmClTZdXzXWwNr6WvQqkSGw1gS//uD89ceM26MMYPWXuPIH76s5tj4lJOakhdJMhfI1gcihmZ7k2sArceFOtsDELE87KgjS2ZudiIBIuFsrk5jcWXfrQUiCQb0hAG/o/wDBNenxJvpksPoWv76t8VsLERYb5S6KsZKgBmGfpglCybwpAvrwql+WON2Qdw/5oOJiZAQUkIN9LAW8ra1f7Rj2li8OTldo0GZgqKiWUasQdWPbQ800h3O47idPKiVIdqYuIIzuYwNM1o0a3EgDNI3bY7qosuTk/PbPljOuVVcfV0b3KfOgLaGKlkYRu7MAwUAnq6I93xox9HxIkeF97LIh1BF7A7xoeNDhwitiIhrd5UVgdwu6gWqD6jwiZY0XqVR5ACn64K7UUqpuV6k4DFgbzh5rd/NtVzUTacPOQyJ7SOv2lIoMSinwk4ZkjaBWyJI1gA4Qgl06WjD1SbDRzfdahLZElpWB3MW9zEgX7iaItmzRspIUrEI1jAa+pZFMxPe8oH1RQUj3W/bfzqoMkRT8/Kfpg2+0t/8ASK68EgGbLdfaWzr4slwPG1CUE8jOqrI12ZVGtx0myjQ1o+O5DbRw7Zo8mIA+dG3Ny/Zc2Pg1BRxYphqraeYq0wW33Tf7vwqoxOJdGy4iIq/VIjRubfTGUt5kV5HNtuZ07wJF81ysPJqArxe0YcSmtg49U7j3HrFZ9t1meYRLvuEHUCTqe7UeVWww7H1Sr/sNdvsMFc+CmqXD4eSXEOqKzOFlYKAc11Qr6u+4ve2/SgJuUWxIMTgYMRgSWSGNYiLdMuhd5c4G52LlxwOU+0tQOWM5xODwM4sWyyRNb2jlcD7TOPCqvk/tiXASHMrGN7LLGbrmUeqwB9WRTqpIFiKvMQsbRB4WR4ExKSWvkIbKWEapvDOXawOgJIv0TQO8vMQx2hHHAAXjTJu9cIMnNt1rlRjY+2a8WsCOo1ZRCLCyTY3G+szsqp898llyKp9qwZydACFO9hVcMSZrylMucl8vs5iTa5399BX8oj+gUdTg+5h99U0WFBjSQDXM4Y8CL9A9lrEeNHuysLFIGjkW6sLdtjvI7QbEd1e8TySkRMsWR01sLlGsTfc11O/2hVArhY9BVrh1ApptnyxHLJG6jgSpK9xdbgd9+/rp9ILsULBHBtlk6IJ6s3zT36dtBIkxKxqWY2ABJ7hqaE4drYV8xxGHZ3dixkWUq1vmqE0ACiw362onx/JvFlMzRh1zKWiVwHdBqQGGgubcb2vaqKeTAZskuHmgYcLnT6pIPuoGbbPf1ZJY+x1Le9c1M4qKBB+jmMl/ZUad7NlHhrTpwOCf1MQV/bBX/UtvfUHE81GbLIzjrVRl8C1r+AqDnOIPWLqOsqpHuJpHERf3h+wfwpgvE29mH7S3/wBJIpkxw3/tD9k/hQTNnqjSkc5lU2u7KbKCdWyr0jbqtetA2ZykwUEcsMfPohhmjBIUjESuMokkC9INYdEHoqLjSs0hkRCSpfyW3xqQmKQjV3H1R9wNBo0vKbBrI8sYm5yVFWR8oV0RI0TmYWzfo85XpSbwN2trN4bllh8hV8NIvTw7LGjq8SR4Zs6IisEydK99De9yb1n/AMpj4NIfsj+GmlxN/mue9/wUUBz/AFtD4dkxEbvMRJGJlYBlw+IdHlTXe1gyqTuBHaC3jOUWHbmxHhGCQD9FE8oaBXN/0skYQNK5Jucza7txNw4YhNLxtf8Abe3x+6vEk620jAPaSfcaAo2vyqklw0kUkUWaSQTPIuZSzKLBWQkg9V7jSwtpQsNruNyqO4G/mCKaGJINwIx9Va9/0k+trDQ+qD4UDxmkk1u/cMwA8BpRXgNlbTxMISSV1hA0zta69thncdjaUFxySSMQSxPVqPcKKNibF2jOohzTJBe5z51jHcGtn/ZX3b6B3kng5osWCo5xVkCl01Q5gVvfgLH3UZ7I2NG8ykItkmMmcj1QGuVHWTa1uG82qVs3ADDIsSA23XO9id7E8Ta58Kuo1Oa4oDOJrgHs9/Gnah7ON17ifuv771MqKVcpXrhvQfPvKKNMMuJhYEMkkioANGV3WRHLX0sAigWN7A6WNBA0FbX6S+R0mMdZoVAdRZhrZwPVJHtDdfq7qyfFcmcbGSHiYVRzkuqnGQZ/VR1du6Pp/EAeNbQ/K+P2qw1MBiYySFKk8a4Y8RxZqg2zE8rIXXLIFdfZcBl8jpQvtCPZ0lyiGJuuNrL9g3XyArOzDJxY+delDjeTQEmIwoHqSK46m6LfeDVXsraDYbESShbsEkAGmhYqpPUbAk1B55hxNO4FA80aM2USExlrXC850QxHEBip8KqCGblkswWN4WkvoFaNJCewWKnyqThZzFC7Ru+YZboq5EjVJM4uVur5TI17sbBlvwpnaMUOzUKsqtiDcZL5r6+vI5APN6aIAoPHN6w5ydSVgrO/6XEq4QsNEUsrhgu65aNeHqkVR3E8j3ndnaeJCCLDM7rZwr5uc1Cs5YtlNtW0ve9SsTHJhmWOaztlBzAnpA3AOvHSq5A82CjxeGd0ngBSTKxzMqksQT87onOAdP7QcFFM4XbPOLeZEkJ0BF42XKqZspXo2OYG2W1ye2oLyDaEY3HKe0feKK9gbTSUc2WBcbtfWHZWbYiWP5mcdjZW/wAy2v8AZFRBNY3DWI3EXBHjQbRJhTVXtLY6TCzizDc49Ydh9odhoIwHK/GR2HOCRRwkGf8AzaN76IsH6QIzpNh2X6UbBh9l7H3mgifKMVgSFcZ4uG/L9Rt6H6J07ONW0L4TGrlZVc8Y5AM6934qasMNt/ATgqZUAbQpKCl+zp6HwNDPKXY2GhPOQ4mMHeI+cBcdsZUk+fnQLF+jSB2vC7R9h6a+F9R76ab0YzHdMlu5h91edmctMRELNklX6dw/213+IJq3T0kHjhV8JT96UFIfRXP/AHsX+f8AJTS+iPEf9RGO7P8Alok/+JP/AGo/xf8A+dI+kn/tR/i//pQUUPommF82JjPg5+6pC+iQ8cSvhGfzVZn0ktwwyf4h/JXhvSTJww8Y+u5+4UEZPRMnHEnwjH56eHokhO/EyeCKPvNcf0kT8IoR9s/xCo7ekXF8BCvcjH4vQWEfolwQ9aSZvFB/DUhfRhgF3o7d7/gooek9IGMP61F7o0+8GoU/LfFtvxTDuyL/AKVFAdQ8gMAu7Dg97Of4qmxclcFHuw0Q7WQH3tesnn5Tyt62JkP/AJH+ANQJdqhvWZm77n40G3GbBw/rII+5kX3CoOK5UYJP1uc/QVmv42t76xr+kl4KfICuf0oPZPmB+P8AIoNe2ZtKPEyNIXRFUWRHdQ5v6zsL9Wgt2078ueaTmcGM7bmk+Yg4lSd57d3VeqbkryD+VRx4qaRkV+kI8ozZPmEtfQEa2tutWm7M2ZFh0yRrYcTxPeaB7BYYRRrGNQoAud5PEntJufGpNcFdqK5akRXaVB4tUbEYGN/WUVLtStQCuP5KxvuUUNY7kYOArTSK8tGDQYti+SjD5tU2I2Aw4VvMuBRt4qsxWwkbhQYPLslhwqux+DZRuPZ3j+fdW24zk0OAoc2tyZzIyjQ/NPUw3eHDxoM/TAPjcQrs9zMQXZjci1hIL9a6WHssvVRDDiV/pWJEsEjUAAbgLqAPsqvnVHsjaMmCnLBAcpIeNuB1Bt7JsSAR18Qac2bJGmMGIEqqmYkiQNnVfmpYCxNgq3BOmtaRI5F45cPjJoHPQkLpYcJEZuaI6jfTxqm22I43ZIj0FJAOgzEEl2sNACxIFtLKKlYxohNLNGSc7uwYqUCh2Jsitqz66MQAL8TqKLESZm00G4DgAN1QOrjHtrY/z10hij1e+mT1fzaveHW5udw+PVQSxfs8/wDiuhm/k15L1zNUU8kjcT99dz9vkKZvSJoHZZSFJBN6i/K5Ov3U8ppMinePKgY+VyddL5TJ7VPcyvV76XNL1e+qiOZ39o1wyv7R86k82vVSyDqFKIudus+dc16zUo9w8qZdDShoiuZh1jzrw8bU1zTdVKJHOL10ueXtqOI26qcTDseFKpznerSjv0d8hXxrrNOpXDKb66GYj5q/Q628BQ1sLChJFZ4g9juYXX7O4+NbbsDlAzqAwtu7BUBoigAACwGgA3ADcAK93qLh8RmFSBQewa7Xla9UCpUqVAqVKlQKuWrtKg81wivVcNAy6A1AxWDB4VYtTb0GW8t+SBl/Sx9GQDU8HA3Bu3trLsSZImKuoVh1j+Qa+k8ZuNY7y+9Y0QASys2rNems4Fck310VR5L16WY1yvS1FOI5p9K8JUuOg4qV65s08tOigiiKu83Uuu0EURGvQhNTVp5aCs+TmujCnqq2SnloKX5G3VXtdnE8KvRT6UA8NlnqpxdknqojSpEdAOw7EJ4VZYbk+eqiDC1c4Wgo8DyfI4UU7M2TltpU3C1bYegcwkFhU0CvC05QdFdrgrtB/9k="
+                  class="bd-placeholder-img card-img-top" xmlns="http://www.w3.org/2000/svg"
+                  aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" role="img"
+                  focusable="false"></a>
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#000000" />
+              <text class="px-3" x="50%" y="50%" fill="#eceeef" dy=".3em">
+                Toyota Avanza
+              </text>
+              </img>
+
+              <div class="card-body">
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="mobil/toyota-avanza.html"><button type="button"
+                        class="btn btn-sm btn-outline-secondary">View</button></a>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <a href="mobil/daihatsu-xenia.html"><img
+                  src="https://rent.jennete.com/lib/images/item/Grand_Xenia_Depan.jpg"
+                  class="bd-placeholder-img card-img-top" xmlns="http://www.w3.org/2000/svg"
+                  aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" role="img"
+                  focusable="false"></a>
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#000000" />
+              <text class="px-3" x="50%" y="50%" fill="#eceeef" dy=".3em">
+                Daihatsu Xenia
+              </text>
+              </img>
+
+              <div class="card-body">
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="mobil/daihatsu-xenia.html"><button type="button" class="btn btn-sm btn-outline-secondary">
+                        View
+                      </button></a>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <a href="mobil/daihatsu-grandmax-blind-van.html"><img
+                  src="https://rent.jennete.com/lib/images/item/Daihatsu-Granmax-Blind-Van-Exterior-1.jpg"
+                  class="bd-placeholder-img card-img-top" xmlns="http://www.w3.org/2000/svg"
+                  aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" role="img"
+                  focusable="false"></a>
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#000000" />
+              <text class="px-3" x="50%" y="50%" fill="#eceeef" dy=".3em">
+                Daihatsu GrandMax Blind Van
+              </text>
+              </img>
+
+              <div class="card-body">
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="mobil/daihatsu-grandmax-blind-van.html"><button type="button"
+                        class="btn btn-sm btn-outline-secondary">
+                        View
+                      </button></a>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <a href="mobil/honda-brio.html"><img src="https://rent.jennete.com/lib/images/item/Brio_Satya_Front.jpg"
+                  class="bd-placeholder-img card-img-top" xmlns="http://www.w3.org/2000/svg"
+                  aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" role="img"
+                  focusable="false"></a>
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#000000" />
+              <text class="px-3" x="50%" y="50%" fill="#eceeef" dy=".3em">
+                Honda Brio
+              </text>
+              </img>
+
+              <div class="card-body">
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="mobil/honda-brio.html"><button type="button" class="btn btn-sm btn-outline-secondary">
+                        View
+                      </button></a>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <a href="mobil/honda-mobillio.html"><img src="https://rent.jennete.com/lib/images/item/CR17.jpg"
+                  class="bd-placeholder-img card-img-top" xmlns="http://www.w3.org/2000/svg"
+                  aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" role="img"
+                  focusable="false"></a>
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#000000" />
+              <text class="px-3" x="50%" y="50%" fill="#eceeef" dy=".3em">
+                Honda Mobillio
+              </text>
+              </img>
+
+              <div class="card-body">
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="mobil/honda-mobillio.html"><button type="button" class="btn btn-sm btn-outline-secondary">
+                        View
+                      </button></a>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <a href="mobil/mitshubishi-pajero.html"><img
+                  src="https://rent.jennete.com/lib/images/item/SewaMobilPajero.jpg"
+                  class="bd-placeholder-img card-img-top" xmlns="http://www.w3.org/2000/svg"
+                  aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" role="img"
+                  focusable="false"></a>
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#000000" />
+              <text class="px-3" y="50%" fill="#eceeef" dy=".3em">
+                Mitshubishi Pajero
+              </text>
+              </img>
+
+              <div class="card-body">
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="mobil/mitshubishi-pajero.html"><button type="button"
+                        class="btn btn-sm btn-outline-secondary">
+                        View
+                      </button></a>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <a href="mobil/suzuki-ertiga.html"><img src="https://rent.jennete.com/lib/images/item/CR18.jpg"
+                  class="bd-placeholder-img card-img-top" xmlns="http://www.w3.org/2000/svg"
+                  aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" role="img"
+                  focusable="false"></a>
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#000000" />
+              <text class="px-3" x="50%" y="50%" fill="#eceeef" dy=".3em">
+                Suzuki Ertiga
+              </text>
+              </img>
+              `
+              <div class="card-body">
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="mobil/suzuki-ertiga.html"><button type="button" class="btn btn-sm btn-outline-secondary">
+                        View
+                      </button></a>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-3 mt-auto">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>
+            <img class="logo1" src="../image/logo-removebg-preview.png" />
+            PT. MAJU MUNDUR
+          </h4>
+          <p>
+
+            MM Rent adalah penyedia layanan sewa kendaraan bermotor yang berpengalaman
+            di indonesia
+          </p>
+          <div class="mb20">
+            <p class="caption">
+              <i class="fa fa-map-marker-alt"> </i>
+              <img class="lokasi" src="../image/lokasi.png" />
+              Jln. Maju mundur Jakarta No. 15
+            </p>
+            <p>
+              <img class="hp" src="../image/hp.png" />
+              (+62) 812-9707-4273
+            </p>
+            <p></p>
+          </div>
+        </div>
+        <div class="col-md-5 text-end">
+          <p>
+            <b>Alamat E-mail</b>
+          </p>
+          <img class="email" src="../image/email.png" />
+          majumundur@gmail.com
+          <p></p>
+          <p>
+            <b>JAM KERJA</b>
+          <p>Senin-Jumat (08.00-18.00)</p>
+          <p>Sabtu (08.00-15.00)</p>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7 text-end">
+      <p>© 2023 All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
