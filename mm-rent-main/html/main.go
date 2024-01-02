@@ -13,7 +13,7 @@ func handleRoot(w http.ResponseWriter, r *http.Request) {
 }
 
 func handleHTML(w http.ResponseWriter, r *http.Request) {
-	http.ServeFile(w, r, "index.html")
+	http.ServeFile(w, r, "../mm-rent-main 1/mm-rent-main/html/index.html")
 }
 
 func main() {
